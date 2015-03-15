@@ -6,6 +6,10 @@
     "run_at": "document_end"
   }],
   "description": "Displays the full like and dislike count for videos",
+  "icons": {
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
   "manifest_version": 2,
   "name": "YouTube Full Like/Dislike Count",
   "version": "1.0.0"
