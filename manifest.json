@@ -2,7 +2,7 @@
   "author": "Shraymonks",
   "content_scripts": [{
     "js": ["script.js"],
-    "matches": ["*://*.youtube.com/watch?*"],
+    "matches": ["*://*.youtube.com/*"],
     "run_at": "document_end"
   }],
   "description": "Displays the full like and dislike count for videos",
