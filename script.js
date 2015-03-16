@@ -2,7 +2,7 @@
 
 var API_KEY = 'YOUR API KEY';
 
-var getFullCount = function(element) {
+var getExactCount = function(element) {
   var label = element.getAttribute('aria-label');
   if (!label) return null;
 
@@ -29,7 +29,7 @@ var renderCount = function(count) {
   return count.toLocaleString('en');
 };
 
-var displayFullCounts = function() {
+var displayExactCounts = function() {
   var buttons = document.getElementById('watch-like-dislike-buttons');
 
   if (buttons) {
@@ -38,8 +38,8 @@ var displayFullCounts = function() {
     var dislikeButtonClicked = buttons.getElementsByClassName('like-button-renderer-dislike-button-clicked')[0];
     var dislikeButtonUnclicked = buttons.getElementsByClassName('like-button-renderer-dislike-button-unclicked')[0];
 
-    var likes = getFullCount(likeButtonUnclicked);
-    var dislikes = getFullCount(dislikeButtonUnclicked);
+    var likes = getExactCount(likeButtonUnclicked);
+    var dislikes = getExactCount(dislikeButtonUnclicked);
 
     var renderCounts = function() {
       // Subtract your likes/dislikes
@@ -77,10 +77,10 @@ var displayFullCounts = function() {
     }
   }
 };
-displayFullCounts();
+displayExactCounts();
 
 // Update the count whenever a new video is played
 // Clicking on a new video link loads the video in dynamically
 // `#content`'s children is observed for mutations to detect a different video is being viewed
-var observer = new MutationObserver(displayFullCounts);
+var observer = new MutationObserver(displayExactCounts);
 observer.observe(document.getElementById('content'), {childList: true});

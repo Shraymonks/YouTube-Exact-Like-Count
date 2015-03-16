@@ -1,7 +1,7 @@
-# YouTube Full Like/Dislike Count
-Displays the full like and dislike count for YouTube videos instead of roundoffs like 8K and 9M.
+# YouTube Exact Like Count
+Displays the exact like and dislike counts for YouTube videos instead of roundoffs like 8K and 9M.
 
-[Get it on the Chrome Web Store](https://chrome.google.com/webstore/detail/youtube-full-likedislike/aanhppgohpdoaoeibihebmcdkhieiahh)
+[Get it on the Chrome Web Store](https://chrome.google.com/webstore/detail/youtube-exact-like-count/aanhppgohpdoaoeibihebmcdkhieiahh)
 
 ## Developing
 1. Open the Chrome Extensions page (chrome://extensions)
